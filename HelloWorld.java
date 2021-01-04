@@ -4,13 +4,17 @@ public class HelloWorld {
       System.out.println("引数ない");
       return;
     }
-    int arg_leng = args[0].length();
+    outputArgLength(args[0]);
+    return;
+  }
+  public static void outputArgLength(String first_args) {
+    int arg_leng = first_args.length();
     System.out.println(arg_leng);
     if (arg_leng == 0) {
       System.out.println("hoge!");
       return;
     }
-    System.out.println(args[0]);
+    System.out.println(first_args);
     return;
   }
 }
